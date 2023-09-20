@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "departamento.h"
 
 tDepartamento criaDepartamento(char* c1, char* c2, char* c3, char* nome, int m1, int m2, int m3, char* diretor){
@@ -38,10 +39,29 @@ tDepartamento criaDepartamento(char* c1, char* c2, char* c3, char* nome, int m1,
     departamento.m1 = m1;
     departamento.m2 = m2;
     departamento.m3 = m3;
+    departamento.media_geral = calculaMediaGeralDepartamento(departamento);
 
     return departamento;
 }
 
 void imprimeAtributosDepartamento (tDepartamento depto){
-    printf("ATRIBUTOS:\ndepartamento => %s\ndiretor => %s\ncurso1 => %s, media1 => %d\ncurso2 => %s, media2 => %d\ncurso3 => %s, media3 => %d\nmedia geral => %d\ndesvio padrao => %d\n\n", depto.nome, depto.diretor, depto.c1, depto.m1, depto.c2, depto.m2, depto.c3, depto.m3, calculaMediaGeralDepartamento(depto), calculaDesvioPadraoDepartamento(depto));
+    if(validaMediaDepartamento(depto.media_geral)){
+        printf("ATRIBUTOS:\ndepartamento => %s\ndiretor => %s\ncurso1 => %s, media1 => %d\ncurso2 => %s, media2 => %d\ncurso3 => %s, media3 => %d\nmedia geral => %.2lf\ndesvio padrao => %.2lf\n\n", depto.nome, depto.diretor, depto.c1, depto.m1, depto.c2, depto.m2, depto.c3, depto.m3, depto.media_geral, calculaDesvioPadraoDepartamento(depto));
+    }
+}
+
+double calculaDesvioPadraoDepartamento(tDepartamento depto){
+    return sqrt((pow(depto.m1-depto.media_geral, 2)+pow(depto.m2-depto.media_geral, 2)+pow(depto.m3-depto.media_geral, 2))/3);
+}
+
+double calculaMediaGeralDepartamento(tDepartamento depto){
+    depto.media_geral = (double)(depto.m1 + depto.m2 + depto.m3)/3;
+    return depto.media_geral;
+}
+
+int validaMediaDepartamento (int media){
+    if(media >=0 && media <=10){
+        return 1;
+    }
+    return 0;
 }
