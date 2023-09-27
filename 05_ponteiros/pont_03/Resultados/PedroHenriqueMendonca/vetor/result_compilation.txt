@@ -1,0 +1,4 @@
+Resultados/PedroHenriqueMendonca/vetor/vetor.c: In function ‘OrdeneCrescente’:
+Resultados/PedroHenriqueMendonca/vetor/vetor.c:40:5: warning: ‘paraTrocar’ is used uninitialized [-Wuninitialized]
+   40 |     TrocaSeAcharMenor(vet, tam, paraTrocar);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

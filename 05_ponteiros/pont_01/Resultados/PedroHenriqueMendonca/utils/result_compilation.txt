@@ -1,0 +1,4 @@
+Resultados/PedroHenriqueMendonca/utils/utils.c: In function ‘TrocaInterios’:
+Resultados/PedroHenriqueMendonca/utils/utils.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
+   15 | }
+      | ^
