@@ -4,9 +4,9 @@
 
 int EhBissexto( tData *data){
     //DEPOIS VE SE FUNCIONA COM data->ano
-    tData *p = &data;
+    // tData *p = &data;
 
-    if ((p->ano % 4 == 0 && p->ano % 100 != 0) || (p->ano % 400 == 0)) {
+    if ((data->ano % 4 == 0 && data->ano % 100 != 0) || (data->ano % 400 == 0)) {
         return 1;
     } else {
         return 0;
@@ -14,36 +14,34 @@ int EhBissexto( tData *data){
 }
 
 void InicializaDataParam( int dia, int mes, int ano, tData *data){
-    tData *p = &data;
-    p->dia = dia;
-    p->mes = mes;
+    // tData *p = &data;
+    data->dia = dia;
+    data->mes = mes;
 
     if(dia<=0){
-        p->dia = 1;
-    } else if(dia>InformaQtdDiasNoMes(&data)){
-        p->dia = InformaQtdDiasNoMes(&data);
-    } else{
-        p->dia = dia;
-    }
+        data->dia = 1;
+    } else if(dia>InformaQtdDiasNoMes(data)){
+        data->dia = InformaQtdDiasNoMes(data);
+    } 
+
     if(mes<=0){
-        p->mes = 1;
+        data->mes = 1;
     } else if(mes>12){
-        p->mes = 12;
-    } else{
-        p->mes = mes;
-    }
-    p->ano = ano;
+        data->mes = 12;
+    } 
+
+    data->ano = ano;
 }
 
 void LeData( tData *data){
     int dia, mes, ano;
     scanf("%d %d %d", &dia, &mes, &ano);
-    InicializaDataParam(dia, mes, ano, &data);
+    InicializaDataParam(dia, mes, ano, data);
 }
 
 int EhIgual( tData *data1, tData *data2){
-    tData *p1 = &data1, *p2 = &data2; 
-    if(p1->dia == p2->dia && p1->mes == p2->mes && p1->ano == p2->ano){
+    // tData *p1 = &data1, *p2 = &data2; 
+    if(data1->dia == data2->dia && data1->mes == data2->mes && data1->ano == data2->ano){
         return 1;
     } else{
         return 0;
@@ -51,18 +49,18 @@ int EhIgual( tData *data1, tData *data2){
 }
 
 void ImprimeData( tData *data){
-    tData *p = &data;
-    printf("'%d/%d/%d'\n", p->dia, p->mes, p->ano);
+    // tData *p = &data;
+    printf("'%02d/%02d/%04d'", data->dia, data->mes, data->ano);
 }
 
 int InformaQtdDiasNoMes( tData *data){
 
-    tData *p = &data;
+    // tData *p = &data;
     int diasNoMes;
 
-    switch (p->mes) {
+    switch (data->mes) {
         case 2:
-            if(EhBissexto){
+            if(EhBissexto(data)){
                 diasNoMes = 29;
             } else{
                 diasNoMes = 28;
@@ -83,13 +81,15 @@ int InformaQtdDiasNoMes( tData *data){
 }
 
 void AvancaParaDiaSeguinte( tData *data){
-    tData *p = &data;
+    // tData *p = &data;
 
-    if((p->dia)+1 <= InformaQtdDiasNoMes(&data)){
-        p->dia++;
-    } else if(p->mes+1 <= 12){
-        p->mes++;
+    if((data->dia)+1 <= InformaQtdDiasNoMes(data)){
+        data->dia++;
+    } else if(data->mes+1 <= 12){
+        data->mes++;
     } else{
-        p->ano++;
+        data->ano++;
+        data->dia = 1;
+        data->mes = 1;
     }
 }
