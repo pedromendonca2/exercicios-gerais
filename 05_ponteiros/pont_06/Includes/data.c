@@ -3,7 +3,14 @@
 #include "data.h" 
 
 int EhBissexto( tData *data){
+    //DEPOIS VE SE FUNCIONA COM data->ano
+    tData *p = &data;
 
+    if ((p->ano % 4 == 0 && p->ano % 100 != 0) || (p->ano % 400 == 0)) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 void InicializaDataParam( int dia, int mes, int ano, tData *data){
@@ -13,8 +20,8 @@ void InicializaDataParam( int dia, int mes, int ano, tData *data){
 
     if(dia<=0){
         p->dia = 1;
-    } else if(dia>InformaQtdDiasNoMes(&dia)){
-        p->dia = InformaQtdDiasNoMes(&dia);
+    } else if(dia>InformaQtdDiasNoMes(&data)){
+        p->dia = InformaQtdDiasNoMes(&data);
     } else{
         p->dia = dia;
     }
@@ -76,5 +83,13 @@ int InformaQtdDiasNoMes( tData *data){
 }
 
 void AvancaParaDiaSeguinte( tData *data){
+    tData *p = &data;
 
+    if((p->dia)+1 <= InformaQtdDiasNoMes(&data)){
+        p->dia++;
+    } else if(p->mes+1 <= 12){
+        p->mes++;
+    } else{
+        p->ano++;
+    }
 }

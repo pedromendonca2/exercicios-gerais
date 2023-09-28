@@ -11,7 +11,7 @@ int main()
     LeData(&dataIni); 
     LeData(&dataFim); 
      
-    data = dataIni; 
+    data = dataIni;
     while( !EhIgual(&data, &dataFim) ){ 
         ImprimeData(&data); 
         printf("\n"); 
