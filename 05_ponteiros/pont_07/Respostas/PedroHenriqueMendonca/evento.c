@@ -25,11 +25,12 @@ void exibirEventos(Evento* eventos, int* numEventos){
 
 void trocarDataEvento(Evento* eventos, int* numEventos){
     int num, dia, mes, ano;
-    scanf("%d %d %d %d", &num, &dia, &mes, &ano);
-    if(num > *numEventos || *numEventos == 0 && num == 0){
+    scanf("%d", &num);
+    if((num > *numEventos) || (*numEventos == 0 && num == 0)){
         printf("Indice invalido!\n");
     } else{
-       printf("Data modificada com sucesso!\n");
+        scanf("%d %d %d", &dia, &mes, &ano);
+        printf("Data modificada com sucesso!\n");
         eventos[num].dia = dia;
         eventos[num].mes = mes;
         eventos[num].ano = ano; 

@@ -12,5 +12,11 @@ int main(){
         LePessoa(&pessoas[i]);
     }
 
+    AssociaFamiliasGruposPessoas(&pessoas);
+
+    for(int i=0; i<num_pessoas; i++){
+        ImprimePessoa(&pessoas[i]);
+    }
+
     return 0;
 }

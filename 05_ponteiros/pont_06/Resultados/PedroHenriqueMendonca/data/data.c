@@ -87,6 +87,7 @@ void AvancaParaDiaSeguinte( tData *data){
         data->dia++;
     } else if(data->mes+1 <= 12){
         data->mes++;
+        data->dia = 1;
     } else{
         data->ano++;
         data->dia = 1;
