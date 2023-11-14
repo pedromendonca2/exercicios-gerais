@@ -3,12 +3,15 @@
 #include <math.h>
 
 /* TAD Opaco */
-struct ponto{
+struct ponto {
     float x, y;
 };
 
 tPonto Pto_Cria (float x, float y){
-    tPonto* ponto = (tPonto *) malloc (sizeof(tPonto));
+    tPonto ponto = (tPonto) malloc (sizeof(ponto));
+    if(ponto == NULL){
+        return NULL;
+    }
     Pto_Atribui_x(ponto, x);
     Pto_Atribui_y(ponto, y);
     return ponto;
