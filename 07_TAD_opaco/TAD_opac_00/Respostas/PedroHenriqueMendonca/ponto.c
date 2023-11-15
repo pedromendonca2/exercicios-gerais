@@ -8,7 +8,7 @@ struct ponto {
 };
 
 tPonto Pto_Cria (float x, float y){
-    tPonto ponto = (tPonto) malloc (sizeof(ponto));
+    tPonto ponto = (tPonto) malloc (sizeof(struct ponto));
     if(ponto == NULL){
         return NULL;
     }
