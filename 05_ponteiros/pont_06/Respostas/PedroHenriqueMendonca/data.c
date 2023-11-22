@@ -3,8 +3,6 @@
 #include "data.h" 
 
 int EhBissexto( tData *data){
-    //DEPOIS VE SE FUNCIONA COM data->ano
-    // tData *p = &data;
 
     if ((data->ano % 4 == 0 && data->ano % 100 != 0) || (data->ano % 400 == 0)) {
         return 1;
@@ -40,7 +38,6 @@ void LeData( tData *data){
 }
 
 int EhIgual( tData *data1, tData *data2){
-    // tData *p1 = &data1, *p2 = &data2; 
     if(data1->dia == data2->dia && data1->mes == data2->mes && data1->ano == data2->ano){
         return 1;
     } else{
@@ -49,7 +46,6 @@ int EhIgual( tData *data1, tData *data2){
 }
 
 void ImprimeData( tData *data){
-    // tData *p = &data;
     printf("'%02d/%02d/%04d'", data->dia, data->mes, data->ano);
 }
 

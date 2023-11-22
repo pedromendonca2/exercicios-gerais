@@ -1,4 +1,3 @@
-Ignorando o Valgrind
 Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
  - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
 #######################################
@@ -68,28 +67,52 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta calculadora / Caso 1:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/calculadora/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta calculadora / Caso 2:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/calculadora/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta calculadora / Caso 3:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/calculadora/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta calculadora / Caso 4:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/calculadora/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
 
 #######################################
@@ -102,10 +125,13 @@ Nome 0: PedroHenriqueMendonca
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
  - Resultados Corretos calculadora: 4 de 4 / Nota 10.00
+ - Valgrinds Corretos calculadora: 4 de 4 / Nota 10.00
  - Resultados Corretos main: 4 de 4 / Nota 10.00
+ - Valgrinds Corretos main: 4 de 4 / Nota 10.00
  - Resultados Corretos completo: 4 de 4 / Nota 10.00
- - Soma das notas do PedroHenriqueMendonca: 60.000
- - Campos Considerados: 6
+ - Valgrinds Corretos completo: 4 de 4 / Nota 10.00
+ - Soma das notas do PedroHenriqueMendonca: 90.000
+ - Campos Considerados: 9
  - Média do PedroHenriqueMendonca: 10.00
 
 ----------------------------------------------------------------------------

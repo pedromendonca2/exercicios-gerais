@@ -1,0 +1,2 @@
+Test Case: Resultados/PedroHenriqueMendonca/main/Casos/3
+Valgrind result: allocs: 22 frees: 10 errors: 1 contexts: 1

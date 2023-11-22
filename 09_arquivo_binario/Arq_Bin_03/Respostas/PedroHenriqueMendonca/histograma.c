@@ -18,21 +18,39 @@ Histograma *CalcularHistograma(Imagem *img, int nIntervalos){
     Histograma* histograma = (Histograma*) calloc (1, sizeof(Histograma));
 
     histograma->numIntervalos = nIntervalos;
-    histograma->tamIntervalo = (int)((ObterAlturaImagem(img)*ObterLarguraImagem(img))/histograma->numIntervalos);
     histograma->numPixels = calloc (histograma->numIntervalos, sizeof(float));
+
+    int maior=0;
 
     if(ObterTipoImagem(img) == FLOAT){
         float* pixels = ObterDadosImagem(img);
-        for(int i=0; i<histograma->numIntervalos; i++){
-            for(int j=histograma->tamIntervalo*i; j<histograma->tamIntervalo*(i+1); j++){
-                histograma->numPixels[i] += (int)(pixels[j] * 255);
+        for(int i=0; i<(ObterAlturaImagem(img)*ObterLarguraImagem(img)); i++){
+            if((pixels[i] * 255) > maior){
+                maior = (int)(pixels[i] * 255);
             }
         }
+        histograma->tamIntervalo = (int)(maior/histograma->numIntervalos) + 1;
+        for(int i=0; i<(ObterAlturaImagem(img)*ObterLarguraImagem(img)); i++){
+            for(int j=0; j<histograma->numIntervalos; j++){
+                if(pixels[i] * 255 >= histograma->tamIntervalo*j && pixels[i] * 255 < histograma->tamIntervalo*(j+1)){
+                    (histograma->numPixels[j])++;
+                }
+            }
+        }
+
     } else if(ObterTipoImagem(img) == INT){
         int* pixels = ObterDadosImagem(img);
-        for(int i=0; i<histograma->numIntervalos; i++){
-            for(int j=histograma->tamIntervalo*i; j<histograma->tamIntervalo*(i+1); j++){
-                histograma->numPixels[i] += pixels[j];
+        for(int i=0; i<(ObterAlturaImagem(img)*ObterLarguraImagem(img)); i++){
+            if(pixels[i] > maior){
+                maior = pixels[i];
+            }
+        }
+        histograma->tamIntervalo = (int)(maior/histograma->numIntervalos) + 1;
+        for(int i=0; i<(ObterAlturaImagem(img)*ObterLarguraImagem(img)); i++){
+            for(int j=0; j<histograma->numIntervalos; j++){
+                if(pixels[i] >= histograma->tamIntervalo*j && pixels[i] < histograma->tamIntervalo*(j+1)){
+                    (histograma->numPixels[j])++;
+                }
             }
         }
     }
@@ -46,7 +64,7 @@ Histograma *CalcularHistograma(Imagem *img, int nIntervalos){
  */
 void MostrarHistograma(Histograma *histograma){
     for(int i=0; i<histograma->numIntervalos; i++){
-        printf("[%d, %d) = %d\n", histograma->tamIntervalo*i, histograma->tamIntervalo*(i+1), histograma->numPixels[i]);
+        printf("[%d, %d): %d\n", histograma->tamIntervalo*i, histograma->tamIntervalo*(i+1), histograma->numPixels[i]);
     }
 }
 

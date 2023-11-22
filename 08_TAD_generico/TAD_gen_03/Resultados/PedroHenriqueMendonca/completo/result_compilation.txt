@@ -1,0 +1,12 @@
+Resultados/PedroHenriqueMendonca/completo/aluno.c: In function ‘LeAluno’:
+Resultados/PedroHenriqueMendonca/completo/aluno.c:39:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   39 |     scanf("%49[^;];%c;%f", aluno->nome, &aluno->genero, &aluno->nota);
+      |     ^~~~~
+Resultados/PedroHenriqueMendonca/completo/aluno.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+Resultados/PedroHenriqueMendonca/completo/aluno.c:39:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   39 |     scanf("%49[^;];%c;%f", aluno->nome, &aluno->genero, &aluno->nota);
+      |     ^~~~~
+Resultados/PedroHenriqueMendonca/completo/aluno.c:39:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

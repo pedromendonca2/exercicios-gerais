@@ -1,2 +1,0 @@
-cc1: fatal error: Resultados/PedroHenriqueMendonca/histograma/main.c: No such file or directory
-compilation terminated.
