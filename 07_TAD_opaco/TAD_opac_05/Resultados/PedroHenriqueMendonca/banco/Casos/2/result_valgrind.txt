@@ -1,0 +1,27 @@
+==24532== Memcheck, a memory error detector
+==24532== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24532== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==24532== Command: Resultados/PedroHenriqueMendonca/banco/prog Resultados/PedroHenriqueMendonca/banco/Casos/2
+==24532== Parent PID: 24531
+==24532== 
+==24532== Conditional jump or move depends on uninitialised value(s)
+==24532==    at 0x484B235: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24532==    by 0x10992B: DestroiUsuario (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532==    by 0x1095E6: DestroiConta (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532==    by 0x1092F1: DestroiBanco (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532==    by 0x10989D: main (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532==  Uninitialised value was created by a heap allocation
+==24532==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24532==    by 0x10959C: CriaConta (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532==    by 0x109291: CriaBanco (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532==    by 0x1097F9: main (in /home/pedro_boa_noite/PROG2/07_TAD_opaco/TAD_opac_05/Resultados/PedroHenriqueMendonca/banco/prog)
+==24532== 
+==24532== 
+==24532== HEAP SUMMARY:
+==24532==     in use at exit: 0 bytes in 0 blocks
+==24532==   total heap usage: 11 allocs, 11 frees, 8,458 bytes allocated
+==24532== 
+==24532== All heap blocks were freed -- no leaks are possible
+==24532== 
+==24532== For lists of detected and suppressed errors, rerun with: -s
+==24532== ERROR SUMMARY: 3 errors from 1 contexts (suppressed: 0 from 0)

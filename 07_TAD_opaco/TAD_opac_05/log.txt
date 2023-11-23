@@ -1,0 +1,210 @@
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: PedroHenriqueMendonca
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA PedroHenriqueMendonca:
+ - Diretório Resultados/PedroHenriqueMendonca criado com sucesso!
+ - Diretório Resultados/PedroHenriqueMendonca/banco criado com sucesso!
+ - Diretório Resultados/PedroHenriqueMendonca/conta criado com sucesso!
+ - Diretório Resultados/PedroHenriqueMendonca/main criado com sucesso!
+ - Diretório Resultados/PedroHenriqueMendonca/usuario criado com sucesso!
+ - Diretório Resultados/PedroHenriqueMendonca/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/banco.c' encontrado!
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/banco.h' encontrado!
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/conta.c' encontrado!
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/conta.h' encontrado!
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/usuario.c' encontrado!
+ - Arquivo esperado 'Respostas/PedroHenriqueMendonca/usuario.h' encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta banco:
+ - Copiando os Casos de teste para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.h' do aluno para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.c' do aluno para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Pasta conta:
+ - Copiando os Casos de teste para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.h' do aluno para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.c' do aluno para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/PedroHenriqueMendonca/main
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.h' do aluno para a pasta Resultados/PedroHenriqueMendonca/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/PedroHenriqueMendonca/main
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.c' do aluno para a pasta Resultados/PedroHenriqueMendonca/main
+ - Pasta usuario:
+ - Copiando os Casos de teste para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.h' do aluno para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.c' do aluno para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/PedroHenriqueMendonca/completo
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.h' do aluno para a pasta Resultados/PedroHenriqueMendonca/completo
+ - Copiando os 'Respostas/PedroHenriqueMendonca/*.c' do aluno para a pasta Resultados/PedroHenriqueMendonca/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta banco:
+ - Compilando o arquivo banco.c do aluno, gerando o banco.o
+ - Compilando o arquivo conta.c do aluno, gerando o conta.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/PedroHenriqueMendonca/banco/main.c está correto.
+ - Compilando o arquivo usuario.c do aluno, gerando o usuario.o
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/result_compilation.txt.
+ - Pasta conta:
+ - Compilando o arquivo banco.c do aluno, gerando o banco.o
+ - Compilando o arquivo conta.c do aluno, gerando o conta.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/PedroHenriqueMendonca/conta/main.c está correto.
+ - Compilando o arquivo usuario.c do aluno, gerando o usuario.o
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo banco.c do aluno, gerando o banco.o
+ - Compilando o arquivo conta.c do aluno, gerando o conta.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/PedroHenriqueMendonca/main/main.c está correto.
+ - Compilando o arquivo usuario.c do aluno, gerando o usuario.o
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/main/result_compilation.txt.
+ - Pasta usuario:
+ - Compilando o arquivo banco.c do aluno, gerando o banco.o
+ - Compilando o arquivo conta.c do aluno, gerando o conta.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/PedroHenriqueMendonca/usuario/main.c está correto.
+ - Compilando o arquivo usuario.c do aluno, gerando o usuario.o
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo banco.c do aluno, gerando o banco.o
+ - Compilando o arquivo conta.c do aluno, gerando o conta.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/PedroHenriqueMendonca/completo/main.c está correto.
+ - Compilando o arquivo usuario.c do aluno, gerando o usuario.o
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/completo/result_compilation.txt.
+ - Arquivos Compilados: Erro!: 5 arquivos com erros de compilacao.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do PedroHenriqueMendonca:
+ - Copiando o Gabarito-obj/banco.o para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Copiando o Gabarito-obj/banco.o para a pasta Resultados/PedroHenriqueMendonca/main
+ - Copiando o Gabarito-obj/banco.o para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Copiando o Gabarito-obj/conta.o para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Copiando o Gabarito-obj/conta.o para a pasta Resultados/PedroHenriqueMendonca/main
+ - Copiando o Gabarito-obj/conta.o para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/PedroHenriqueMendonca/usuario
+ - Copiando o Gabarito-obj/usuario.o para a pasta Resultados/PedroHenriqueMendonca/banco
+ - Copiando o Gabarito-obj/usuario.o para a pasta Resultados/PedroHenriqueMendonca/conta
+ - Copiando o Gabarito-obj/usuario.o para a pasta Resultados/PedroHenriqueMendonca/main
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta banco:
+ - Gerando o binário prog linkando com o(s) arquivo(s) banco/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/result_linking.txt
+ - Pasta conta:
+ - Gerando o binário prog linkando com o(s) arquivo(s) conta/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/main/result_linking.txt
+ - Pasta usuario:
+ - Gerando o binário prog linkando com o(s) arquivo(s) usuario/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/completo/result_linking.txt
+ - Arquivos Linkados: Erro! 2 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta banco / Caso 1:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 11, frees: 11, errors: 3.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta banco / Caso 2:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 11, frees: 11, errors: 3.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta banco / Caso 3:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 14, frees: 14, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta conta / Caso 1:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta conta / Caso 2:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta conta / Caso 3:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 14, frees: 14, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta usuario / Caso 1:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 10, frees: 10, errors: 22.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta usuario / Caso 2:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 10, frees: 10, errors: 16.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta usuario / Caso 3:
+ - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 19, frees: 19, errors: 60.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: PedroHenriqueMendonca
+ - Arquivos Corretos: 6 de 7 / Nota 8.57
+ - Compilações Corretas: 15 de 20 / Nota 7.50
+ - Linkagens Corretas: 3 de 5 / Nota 6.00
+ - Resultados Corretos banco: 0 de 3 / Nota 0.00
+ - Valgrinds Corretos banco: 1 de 3 / Nota 3.33
+ - Resultados Corretos conta: 0 de 3 / Nota 0.00
+ - Valgrinds Corretos conta: 3 de 3 / Nota 10.00
+ - Resultados Corretos main: 0 de 3 / Nota 0.00
+ - Valgrinds Corretos main: 0 de 3 / Nota 0.00
+ - Resultados Corretos usuario: 0 de 3 / Nota 0.00
+ - Valgrinds Corretos usuario: 0 de 3 / Nota 0.00
+ - Resultados Corretos completo: 0 de 3 / Nota 0.00
+ - Valgrinds Corretos completo: 0 de 3 / Nota 0.00
+ - Soma das notas do PedroHenriqueMendonca: 35.400
+ - Campos Considerados: 13
+ - Média do PedroHenriqueMendonca: 2.72
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
