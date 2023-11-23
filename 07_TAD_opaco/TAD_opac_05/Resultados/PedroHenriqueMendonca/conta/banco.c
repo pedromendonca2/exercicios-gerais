@@ -25,9 +25,9 @@ tBanco *CriaBanco(){
         exit(0);
     }
 
-    for(int i=0; i<5; i++){
-        banco->contas[i] = CriaConta();
-    }
+    // for(int i=0; i<5; i++){
+    //     banco->contas[i] = CriaConta();
+    // }
 
     banco->qtd_contas = 0;
 
@@ -55,6 +55,13 @@ void DestroiBanco(tBanco *banco){
  * @param banco Ponteiro para o banco onde a conta será aberta.
  */
 void AbreContaBanco(tBanco *banco){
+    if(banco->qtd_contas > 4){
+        banco->contas = realloc(banco->contas, sizeof(tConta*));
+        if(banco->contas == NULL){
+            exit(0);
+        }
+    }
+    banco->contas[banco->qtd_contas] = CriaConta();
     LeConta(banco->contas[banco->qtd_contas]);
     (banco->qtd_contas)++;
 }
@@ -69,7 +76,7 @@ void SaqueContaBanco(tBanco *banco){
     int numConta;
     float valor;
 
-    scanf("%d %f", &numConta, &valor);
+    scanf("%d %f\n", &numConta, &valor);
 
     SaqueConta(banco->contas[numConta-1], valor);
 }
@@ -84,7 +91,7 @@ void DepositoContaBanco(tBanco *banco){
     int numConta;
     float valor;
 
-    scanf(" %d %f", &numConta, &valor);
+    scanf("%d %f\n", &numConta, &valor);
 
     DepositoConta(banco->contas[numConta-1], valor);
 }
@@ -99,7 +106,7 @@ void TransferenciaContaBanco(tBanco *banco){
     int numConta_1, numConta_2;
     float valor;
 
-    scanf(" %d %d %f", &numConta_1, &numConta_2, &valor);
+    scanf("%d %d %f\n", &numConta_1, &numConta_2, &valor);
 
     if(numConta_1-1 <= banco->qtd_contas && numConta_1-1 > 0 && numConta_2-1 <= banco->qtd_contas && numConta_2-1 > 0){
         TransferenciaConta(banco->contas[numConta_2-1], banco->contas[numConta_1-1], valor);

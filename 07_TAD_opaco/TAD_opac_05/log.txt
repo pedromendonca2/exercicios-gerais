@@ -127,11 +127,11 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta banco / Caso 1:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 11, frees: 11, errors: 3.
+ - Valgrind: Incorreto! allocs: 8, frees: 4, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta banco / Caso 2:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 11, frees: 11, errors: 3.
+ - Valgrind: Incorreto! allocs: 8, frees: 4, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta banco / Caso 3:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/banco/Casos/3/result_valgrind.txt.
@@ -140,15 +140,15 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta conta / Caso 1:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 8, frees: 8, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta conta / Caso 2:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 8, frees: 8, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta conta / Caso 3:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/conta/Casos/3/result_valgrind.txt.
  - Valgrind: Ok! allocs: 14, frees: 14, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 1:
  - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
  - Resultado para o saida.txt: Incorreto!
@@ -160,16 +160,16 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Incorreto!
  - Pasta usuario / Caso 1:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 10, frees: 10, errors: 22.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 10, frees: 10, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta usuario / Caso 2:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 10, frees: 10, errors: 16.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 10, frees: 10, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta usuario / Caso 3:
  - Arquivo de output gerado: Resultados/PedroHenriqueMendonca/usuario/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 19, frees: 19, errors: 60.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
  - Resultado para o saida.txt: Incorreto!
@@ -191,17 +191,17 @@ Nome 0: PedroHenriqueMendonca
  - Linkagens Corretas: 3 de 5 / Nota 6.00
  - Resultados Corretos banco: 0 de 3 / Nota 0.00
  - Valgrinds Corretos banco: 1 de 3 / Nota 3.33
- - Resultados Corretos conta: 0 de 3 / Nota 0.00
+ - Resultados Corretos conta: 3 de 3 / Nota 10.00
  - Valgrinds Corretos conta: 3 de 3 / Nota 10.00
  - Resultados Corretos main: 0 de 3 / Nota 0.00
  - Valgrinds Corretos main: 0 de 3 / Nota 0.00
- - Resultados Corretos usuario: 0 de 3 / Nota 0.00
- - Valgrinds Corretos usuario: 0 de 3 / Nota 0.00
+ - Resultados Corretos usuario: 3 de 3 / Nota 10.00
+ - Valgrinds Corretos usuario: 3 de 3 / Nota 10.00
  - Resultados Corretos completo: 0 de 3 / Nota 0.00
  - Valgrinds Corretos completo: 0 de 3 / Nota 0.00
- - Soma das notas do PedroHenriqueMendonca: 35.400
+ - Soma das notas do PedroHenriqueMendonca: 65.400
  - Campos Considerados: 13
- - Média do PedroHenriqueMendonca: 2.72
+ - Média do PedroHenriqueMendonca: 5.03
 
 ----------------------------------------------------------------------------
 

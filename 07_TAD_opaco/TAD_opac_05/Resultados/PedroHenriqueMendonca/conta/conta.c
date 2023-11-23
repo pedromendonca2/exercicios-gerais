@@ -45,7 +45,7 @@ void DestroiConta(tConta *conta){
  */
 void LeConta(tConta *conta){
     LeUsuario(conta->usuario);
-    scanf(" %d", &conta->numero);
+    scanf("%d\n", &conta->numero);
 }
 
 /**

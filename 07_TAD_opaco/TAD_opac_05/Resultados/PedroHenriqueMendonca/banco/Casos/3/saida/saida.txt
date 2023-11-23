@@ -1,10 +1,5 @@
-Opcao invalida
-Opcao invalida
-Opcao invalida
 
 Saldo Insuficiente para realizar a transferência!
-Opcao invalida
-Opcao invalida
 ===| Imprimindo Relatorio |===
 Conta: 1
 Saldo: R$ 1000.00

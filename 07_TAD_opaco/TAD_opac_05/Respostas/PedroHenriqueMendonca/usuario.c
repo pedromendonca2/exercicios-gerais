@@ -44,8 +44,8 @@ void DestroiUsuario(tUsuario *user){
  */
 void LeUsuario(tUsuario *user){
     char nome[100];
-    scanf(" %[^\n]", nome);
-    scanf(" %d", &user->CPF);
+    scanf("%s", nome);
+    scanf("%d", &user->CPF);
 
     user->nome = malloc(sizeof(char)*(strlen(nome)+1));
     strcpy(user->nome, nome);
