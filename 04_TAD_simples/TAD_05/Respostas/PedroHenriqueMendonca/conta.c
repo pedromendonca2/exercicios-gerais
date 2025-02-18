@@ -10,6 +10,8 @@ tConta CriaConta(int numero, tUsuario user){
     conta.saldo = 0;
 
     return conta;
+
+    // stop auto-complete
 }
 
 tConta SaqueConta(tConta conta, float valor){
