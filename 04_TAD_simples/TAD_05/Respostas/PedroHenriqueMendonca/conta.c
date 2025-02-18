@@ -12,6 +12,8 @@ tConta CriaConta(int numero, tUsuario user){
     return conta;
 
     // stop auto-complete
+    // mudança
+    // mudança 2, 3 e 4
 }
 
 tConta SaqueConta(tConta conta, float valor){
